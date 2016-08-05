@@ -1,10 +1,10 @@
 /* tslint:disable:no-unused-variable */
 
 import { addProviders, async, inject } from '@angular/core/testing';
-import {Recipe} from './recipe';
+import {Ingredient} from './ingredient';
 
-describe('Recipe', () => {
+describe('Ingredient', () => {
   it('should create an instance', () => {
-    expect(new Recipe('Dummy', 'Dummy', 'Dummy.jpg', [])).toBeTruthy();
+    expect(new Ingredient('Dummy', 1)).toBeTruthy();
   });
 });
