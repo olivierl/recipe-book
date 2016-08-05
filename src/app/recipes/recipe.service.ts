@@ -5,7 +5,7 @@ import { Ingredient } from '../shared';
 
 @Injectable()
 export class RecipeService {
-  private recipes: Recipe[] = [
+  private _recipes: Recipe[] = [
     new Recipe('Schnitzel', 'Very tasty', 'http://images.derberater.de/files/imagecache/456xXXX_berater/berater/slides/WienerSchnitzel.jpg', [
       new Ingredient('French Fries', 2),
       new Ingredient('Pork Meat', 1),
@@ -16,7 +16,15 @@ export class RecipeService {
   constructor() { }
 
   getRecipes() {
-    return this.recipes;
+    return this._recipes;
+  }
+
+  getRecipe(id: number) {
+    return this._recipes[id];
+  }
+
+  deleteRecipe(recipe: Recipe) {
+    this._recipes.splice(this._recipes.indexOf(recipe), 1);
   }
 
 }
