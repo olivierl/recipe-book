@@ -1,13 +1,14 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent }   from './app.component';
-import { routing } from './app.routes';
+import { AppRoutes } from './app.routes';
 import { ShoppingListService } from './shopping-list';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, routing],
+  imports: [BrowserModule, FormsModule, AppRoutes],
   bootstrap: [AppComponent],
   providers: [ShoppingListService]
 })
