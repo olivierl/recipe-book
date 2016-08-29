@@ -8,7 +8,12 @@ import { RecipeService } from './recipes';
   moduleId: module.id,
   selector: 'rb-header',
   templateUrl: 'header.component.html',
-  directives: [DropdownDirective, ROUTER_DIRECTIVES]
+  directives: [DropdownDirective, ROUTER_DIRECTIVES],
+  styles: [`
+    ul.dropdown-menu > li > a {
+      cursor: pointer;
+    }
+  `]
 })
 export class HeaderComponent {
 
