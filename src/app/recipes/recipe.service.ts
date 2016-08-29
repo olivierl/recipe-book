@@ -27,4 +27,11 @@ export class RecipeService {
     this._recipes.splice(this._recipes.indexOf(recipe), 1);
   }
 
+  addRecipe(recipe: Recipe) {
+    this._recipes.push(recipe);
+  }
+
+  editRecipe(oldRecipe: Recipe, newRecipe: Recipe) {
+    this._recipes[this._recipes.indexOf(oldRecipe)] = newRecipe;
+  }
 }
