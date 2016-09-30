@@ -4,10 +4,9 @@ import { Subscription } from 'rxjs/Rx';
 
 import { Recipe } from '../recipe';
 import { ShoppingListService } from '../../shopping-list';
-import { RecipeService } from '../../recipes';
+import { RecipeService } from '../../recipes/recipe.service';
 
 @Component({
-  moduleId: module.id,
   selector: 'rb-recipe-detail',
   templateUrl: 'recipe-detail.component.html'
 })

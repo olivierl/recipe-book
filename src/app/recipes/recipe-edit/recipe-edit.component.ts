@@ -5,8 +5,7 @@ import {
   FormGroup,
   FormControl,
   Validators,
-  FormBuilder,
-  REACTIVE_FORM_DIRECTIVES
+  FormBuilder
 } from '@angular/forms';
 import { Subscription } from 'rxjs/Rx';
 
@@ -14,10 +13,8 @@ import { RecipeService } from '../recipe.service';
 import { Recipe } from '../recipe';
 
 @Component({
-  moduleId: module.id,
   selector: 'rb-recipe-edit',
-  templateUrl: 'recipe-edit.component.html',
-  directives: [REACTIVE_FORM_DIRECTIVES]
+  templateUrl: 'recipe-edit.component.html'
 })
 export class RecipeEditComponent implements OnInit, OnDestroy {
   private _recipeIndex: number;
