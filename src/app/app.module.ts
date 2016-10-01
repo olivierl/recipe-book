@@ -5,24 +5,22 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
-import { DropdownDirective } from './dropdown.directive';
+import { RecipeBookRoutingModule } from './app-routing.module';
+import { CoreModule } from './core.module';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { RecipeService } from './recipes/recipe.service';
-import { RecipeBookRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    DropdownDirective,
-    HomeComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     HttpModule,
-    RecipeBookRoutingModule
+    RecipeBookRoutingModule,
+    CoreModule
   ],
   providers: [
     RecipeService,
