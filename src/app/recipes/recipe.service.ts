@@ -8,6 +8,7 @@ import { Ingredient } from '../shared';
 @Injectable()
 export class RecipeService {
   private _recipes: Recipe[] = [
+    // tslint:disable-next-line:max-line-length
     new Recipe('Schnitzel', 'Very tasty', 'http://images.derberater.de/files/imagecache/456xXXX_berater/berater/slides/WienerSchnitzel.jpg', [
       new Ingredient('French Fries', 2),
       new Ingredient('Pork Meat', 1),

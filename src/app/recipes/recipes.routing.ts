@@ -14,6 +14,6 @@ const RECIPES_ROUTES: Routes = [
       { path: ':id/edit', component: RecipeEditComponent }
     ]
   }
-]
+];
 
 export const RecipesRouting = RouterModule.forChild(RECIPES_ROUTES);
