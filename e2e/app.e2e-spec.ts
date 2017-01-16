@@ -1,6 +1,6 @@
 import { RecipeBookPage } from './app.po';
 
-describe('recipe-book2 App', function() {
+describe('recipe-book App', function() {
   let page: RecipeBookPage;
 
   beforeEach(() => {
@@ -9,6 +9,6 @@ describe('recipe-book2 App', function() {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('rb works!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });

@@ -3,20 +3,24 @@
 # compiled output
 /dist
 /tmp
-/src/**/*.js
-/src/**/*.map
 
 # dependencies
 /node_modules
-/bower_components
 
 # IDEs and editors
 /.idea
 .project
 .classpath
+.c9/
 *.launch
 .settings/
-.vscode
+
+# IDE - VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # misc
 /.sass-cache
